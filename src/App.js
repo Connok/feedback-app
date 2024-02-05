@@ -7,6 +7,7 @@ import FeedbackList from "./components/FeedbackList"
 import FeedbackStats from "./components/FeedbackStats.jsx"
 import FeedbackForm from "./components/FeedbackForm.jsx";
 import AboutPage from './components/pages/AboutPage.jsx';
+import AboutIconLink from './components/AboutIconLink.jsx';
 
 
 const App = () => {
@@ -43,6 +44,7 @@ const deleteFeedback = (id) => {
                
                 <Route path='/about' element={<AboutPage />} />
                  </Routes>
+                 <AboutIconLink />
             </div>
         </Router>
     )
