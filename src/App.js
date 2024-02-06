@@ -7,6 +7,7 @@ import FeedbackList from "./components/FeedbackList"
 import FeedbackStats from "./components/FeedbackStats.jsx"
 import FeedbackForm from "./components/FeedbackForm.jsx";
 import AboutPage from './components/pages/AboutPage.jsx';
+import { FeedbackProvider } from './context/FeedbackContext.js';
 import AboutIconLink from './components/AboutIconLink.jsx';
 
 
@@ -27,6 +28,7 @@ const deleteFeedback = (id) => {
 } 
 
     return (
+        <FeedbackProvider>
         <Router>
             <Header />
             
@@ -47,6 +49,7 @@ const deleteFeedback = (id) => {
                  <AboutIconLink />
             </div>
         </Router>
+        </FeedbackProvider>
     )
 }
 
